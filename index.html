@@ -1,0 +1,39 @@
+<!-- # TodoList
+- Il faut :
+- Un minimun de couleur
+- Un input avec un ajout soit en appuyant sur le bouton soit en appuyant sur "enter" sur le clavier
+- Un filter qui permet de filtrer les éléments "fini", "en cours", "tous"
+- Pouvoir  modifier l'élément sans prompt mais avec un input
+- Supprimer avec une validation  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Public/css/app.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>TodoList</title>
+    </head>
+    <body class="title">
+        <h1>To-Do-List</h1>
+        <div class="addTasksPrint">
+            <input type="text" id="new-task" placeholder="New Tasks">
+        <button id="add-task">Ajouter</button>
+        <select id="filter-tasks">
+            <option value="all">Tous</option>
+            <option value="finished">Fini</option>
+            <option value="in-progress">En cours</option>
+        </select>
+        </div>
+        <ul id="task-list" class="task-list" height= "300px">
+
+        </ul>
+        <script type="module" src="./Public/js/main.js"></script>
+    </body>
+
+</html>
